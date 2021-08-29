@@ -1,13 +1,10 @@
-lst = []
+inp = input("Enter the numbers:")
+numbers = inp.split()
 
-print("Enter 5 elements of list:")
-for i in range(0,5):
-    elements=int(input())
-    lst.append(elements)
-    
+lst = list(numbers)
 print(lst)
-
-sum = 0
-for i in range(0,len(lst)):
-    sum = sum + lst[i]
-print("Sum of elements is:",sum)
+sum =0
+for i in numbers:
+    sum = sum + int(i)
+print('Sum is:',sum)
+    
