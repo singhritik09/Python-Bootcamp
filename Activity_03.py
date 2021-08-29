@@ -1,7 +1,9 @@
-s1="Good"
-s2="Morning"
-
-s3= s1+" "+ s2+" " 
-print(s3)
-
-print(s3*5)    
+i1="Good"
+i2="Morning"
+print(i1+i2)
+print((i1+i2)*5)
+i3=i1+" "+i2
+print(i3)
+for i in range(0,5):
+    print(i3)
+    
