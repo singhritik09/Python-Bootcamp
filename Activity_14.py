@@ -1,14 +1,11 @@
 n = int(input("Enter an integer:"))
 
 def prime():
-    if n==1 or n==2:
-        print("Given integer is prime")
-    
-    for i in range(2,n):
-        if n%i==0:
-            print("Given integer is not a prime number")
+    for i in range(2,int(n/2)+1):
+        if (n%i==0):
+            print(n, "is not a Prime Number")
             break
-        else:
-            print("Given integer is a prime number")
-            break
+    else:
+        print(n,"is a Prime number")
+
 prime()
